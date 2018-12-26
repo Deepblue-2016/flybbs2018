@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>基于 layui 的极简社区页面模版</title>
+    <title>极简社区</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="fly,layui,前端社区">
     <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
@@ -124,30 +124,30 @@
         </div>
         <div class="layui-col-md4">
 
-            <div class="fly-panel">
-                <h3 class="fly-panel-title">温馨通道</h3>
-                <ul class="fly-panel-main fly-list-static">
-                    <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>
-                    </li>
-                    <li>
-                        <a href="http://fly.layui.com/jie/5366/" target="_blank">
-                            layui 常见问题的处理和实用干货集锦
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>
-                    </li>
-                    <li>
-                        <a href="http://fly.layui.com/jie/5366/" target="_blank">
-                            layui 常见问题的处理和实用干货集锦
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>
-                    </li>
-                </ul>
-            </div>
+            <%--<div class="fly-panel">--%>
+                <%--<h3 class="fly-panel-title">温馨通道</h3>--%>
+                <%--<ul class="fly-panel-main fly-list-static">--%>
+                    <%--<li>--%>
+                        <%--<a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="http://fly.layui.com/jie/5366/" target="_blank">--%>
+                            <%--layui 常见问题的处理和实用干货集锦--%>
+                        <%--</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="http://fly.layui.com/jie/5366/" target="_blank">--%>
+                            <%--layui 常见问题的处理和实用干货集锦--%>
+                        <%--</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云) 仓库，欢迎Star</a>--%>
+                    <%--</li>--%>
+                <%--</ul>--%>
+            <%--</div>--%>
 
 
             <div class="fly-panel fly-signin">
@@ -155,8 +155,8 @@
                     签到
                     <i class="fly-mid"></i>
                     <a href="javascript:;" class="fly-link" id="LAY_signinHelp">说明</a>
-                    <i class="fly-mid"></i>
-                    <a href="javascript:;" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>
+                    <%--<i class="fly-mid"></i>--%>
+                    <%--<a href="javascript:;" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>--%>
                     <c:if test="${!empty userinfo}">
                         <span class="fly-signin-days">已连续签到
                             <cite>
@@ -230,38 +230,39 @@
 
 
 
-            <div class="fly-panel">
-                <div class="fly-panel-title">
-                    这里可作为广告区域
-                </div>
-                <div class="fly-panel-main">
-                    <a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>
-                </div>
-            </div>
+            <%--<div class="fly-panel">--%>
+                <%--<div class="fly-panel-title">--%>
+                    <%--这里可作为广告区域--%>
+                <%--</div>--%>
+                <%--<div class="fly-panel-main">--%>
+                    <%--<a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>--%>
+                <%--</div>--%>
+            <%--</div>--%>
 
-            <div class="fly-panel fly-link">
-                <h3 class="fly-panel-title">友情链接</h3>
-                <dl class="fly-panel-main">
-                    <dd><a href="http://www.layui.com/" target="_blank">layui</a><dd>
-                    <dd><a href="http://layim.layui.com/" target="_blank">WebIM</a><dd>
-                    <dd><a href="http://layer.layui.com/" target="_blank">layer</a><dd>
-                    <dd><a href="http://www.layui.com/laydate/" target="_blank">layDate</a><dd>
-                    <dd><a href="mailto:xianxin@layui-inc.com?subject=%E7%94%B3%E8%AF%B7Fly%E7%A4%BE%E5%8C%BA%E5%8F%8B%E9%93%BE" class="fly-link">申请友链</a><dd>
-                </dl>
-            </div>
+            <%--<div class="fly-panel fly-link">--%>
+                <%--<h3 class="fly-panel-title">友情链接</h3>--%>
+                <%--<dl class="fly-panel-main">--%>
+                    <%--<dd><a href="http://www.layui.com/" target="_blank">layui</a><dd>--%>
+                    <%--<dd><a href="http://layim.layui.com/" target="_blank">WebIM</a><dd>--%>
+                    <%--<dd><a href="http://layer.layui.com/" target="_blank">layer</a><dd>--%>
+                    <%--<dd><a href="http://www.layui.com/laydate/" target="_blank">layDate</a><dd>--%>
+                    <%--<dd><a href="mailto:xianxin@layui-inc.com?subject=%E7%94%B3%E8%AF%B7Fly%E7%A4%BE%E5%8C%BA%E5%8F%8B%E9%93%BE" class="fly-link">申请友链</a><dd>--%>
+                <%--</dl>--%>
+            <%--</div>--%>
 
         </div>
     </div>
 </div>
 
-<div class="fly-footer">
-    <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
-    <p>
-        <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-        <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-        <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
-    </p>
-</div>
+<%@include file="common/footer.jsp"%>
+<%--<div class="fly-footer">--%>
+    <%--<p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>--%>
+    <%--<p>--%>
+        <%--<a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>--%>
+        <%--<a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>--%>
+        <%--<a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>--%>
+    <%--</p>--%>
+<%--</div>--%>
 
 <script id="topic_list" type="text/html">
 

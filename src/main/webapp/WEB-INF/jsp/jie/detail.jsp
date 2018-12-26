@@ -246,32 +246,32 @@
                 -->
             </dl>
 
-            <div class="fly-panel">
-                <div class="fly-panel-title">
-                    这里可作为广告区域
-                </div>
-                <div class="fly-panel-main">
-                    <a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>
-                </div>
-            </div>
+            <%--<div class="fly-panel">--%>
+                <%--<div class="fly-panel-title">--%>
+                    <%--这里可作为广告区域--%>
+                <%--</div>--%>
+                <%--<div class="fly-panel-main">--%>
+                    <%--<a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>--%>
+                <%--</div>--%>
+            <%--</div>--%>
 
-            <div class="fly-panel" style="padding: 20px 0; text-align: center;">
-                <img src="../../res/images/weixin.jpg" style="max-width: 100%;" alt="layui">
-                <p style="position: relative; color: #666;">微信扫码关注 layui 公众号</p>
-            </div>
+            <%--<div class="fly-panel" style="padding: 20px 0; text-align: center;">--%>
+                <%--<img src="../../res/images/weixin.jpg" style="max-width: 100%;" alt="layui">--%>
+                <%--<p style="position: relative; color: #666;">微信扫码关注 layui 公众号</p>--%>
+            <%--</div>--%>
 
         </div>
     </div>
 </div>
-
-<div class="fly-footer">
-    <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
-    <p>
-        <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-        <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-        <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
-    </p>
-</div>
+<%@include file="../common/footer.jsp"%>
+<%--<div class="fly-footer">--%>
+    <%--<p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>--%>
+    <%--<p>--%>
+        <%--<a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>--%>
+        <%--<a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>--%>
+        <%--<a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>--%>
+    <%--</p>--%>
+<%--</div>--%>
 
 <script src="../../res/layui/layui.js"></script>
 <script>
