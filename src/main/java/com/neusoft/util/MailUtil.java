@@ -103,9 +103,9 @@ public class MailUtil {
 
         // 4. Subject: 邮件主题
         message.setSubject("用户激活", "UTF-8");
-        String activeUrl="http://localhost:8085/user/activemail/"+mailActiveCode;
+        String activeUrl="http://www.songbo.info/user/activemail/"+mailActiveCode;
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("尊敬的用户，您好！我是睿道社区站长xxx，请点击激活链接完成邮箱激活<a href=\""+activeUrl+"\" target=\"_blank\">"+activeUrl+"</a>", "text/html;charset=UTF-8");
+        message.setContent("尊敬的用户，您好！我是睿道社区站长songbo，请点击激活链接完成邮箱激活(若不好使，请复制链接到浏览器中)<a href=\""+activeUrl+"\" target=\"_blank\">"+activeUrl+"</a>", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());

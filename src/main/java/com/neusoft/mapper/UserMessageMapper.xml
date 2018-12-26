@@ -133,7 +133,7 @@
     union all
     select 0 as userid,'' as nickname,-1 as topic_id
     ,'' as title, tab_user_message.id as msg_id, tab_user_message.create_time
-    ,'系统消息：欢迎使用xxx' as msg_content1, '' as msg_content2
+    ,'系统消息：欢迎使用睿道社区' as msg_content1, '' as msg_content2
     from tab_user_message
     where tab_user_message.recv_msg_user_id = #{value} and tab_user_message.msg_type = 0
     ) as tabTemp order by tabTemp.create_time desc
