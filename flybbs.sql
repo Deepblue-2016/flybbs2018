@@ -156,7 +156,7 @@ INSERT INTO `tab_topic_category` VALUES ('5', '公告');
 INSERT INTO `tab_topic_category` VALUES ('6', '动态');
 
 
-alter table tab_user add COLUMN isadmin int(1) NOT NULL DEFAULT 0
+alter table tab_user add COLUMN isadmin int(1) NOT NULL DEFAULT 0;
 
 create table tab_user_comment_agree(
 	id int PRIMARY key not null AUTO_INCREMENT,
