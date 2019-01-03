@@ -25,7 +25,15 @@
 
 
 <div class="fly-home fly-panel" style="background-image: url();">
-    <img src="${pageContext.request.contextPath}/res/uploadImgs/${user.picPath}" alt="${user.nickname}">
+    <%--<img src="${pageContext.request.contextPath}/res/uploadImgs/${user.picPath}" alt="${user.nickname}">--%>
+        <c:choose>
+            <c:when test="${userinfo.picPath != ''}">
+                <img src="${pageContext.request.contextPath}/res/uploadImgs/${userinfo.picPath}">
+            </c:when>
+            <c:otherwise>
+                <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+            </c:otherwise>
+        </c:choose>
     <i class="iconfont icon-renzheng" title="Fly社区认证"></i>
     <h1>
         ${user.nickname}

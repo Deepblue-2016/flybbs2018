@@ -26,16 +26,16 @@ public class LoginInterceptor implements HandlerInterceptor {
         if(object != null)
         {
             //邮箱是否已激活
-            User user = (User)object;
-            if(user.getActiveState() == 1)
-            {
-                return true;
-            }
-            else
-            {
-                httpServletRequest.getRequestDispatcher("/WEB-INF/jsp/user/active.jsp").forward(httpServletRequest,httpServletResponse);
-            }
-
+//            User user = (User)object;
+//            if(user.getActiveState() == 1)
+//            {
+//                return true;
+//            }
+//            else
+//            {
+//                httpServletRequest.getRequestDispatcher("/WEB-INF/jsp/user/active.jsp").forward(httpServletRequest,httpServletResponse);
+//            }
+            return true;
         }
         else
         {

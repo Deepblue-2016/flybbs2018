@@ -102,6 +102,8 @@ public class UserController {
                 userMessage.setRecvMsgUserId(userReg.getId());
                 userMessageMapper.insertSelective(userMessage);
 
+                request.getSession().setAttribute("userinfo",userReg);
+
                 regRespObj.setStatus(0);
                 System.out.println(request.getServletContext().getContextPath());
                 regRespObj.setAction(request.getServletContext().getContextPath() + "/");
@@ -175,6 +177,7 @@ public class UserController {
     {
         ModelAndView modelAndView = new ModelAndView();
         User userLogin = (User)httpSession.getAttribute("userinfo");
+        userMessageMapper.updateUserMsgReadState(userLogin.getId());
         List<Map<String,Object>> mapList = userMessageMapper.getMessagesByUserID(userLogin.getId());
         for(Map<String,Object> map : mapList)
         {

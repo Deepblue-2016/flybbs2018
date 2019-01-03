@@ -48,6 +48,11 @@ public class MailUtil {
         props.setProperty("mail.smtp.socketFactory.fallback", "false");
         props.setProperty("mail.smtp.socketFactory.port", smtpPort);
         */
+        final String smtpPort = "465";
+        props.setProperty("mail.smtp.port", smtpPort);
+        props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        props.setProperty("mail.smtp.socketFactory.fallback", "false");
+        props.setProperty("mail.smtp.socketFactory.port", smtpPort);
 
         // 2. 根据配置创建会话对象, 用于和邮件服务器交互
         Session session = Session.getDefaultInstance(props);
@@ -105,7 +110,7 @@ public class MailUtil {
         message.setSubject("用户激活", "UTF-8");
         String activeUrl="http://www.songbo.info/user/activemail/"+mailActiveCode;
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("尊敬的用户，您好！我是睿道社区站长songbo，请点击激活链接完成邮箱激活(若不好使，请复制链接到浏览器中)<a href=\""+activeUrl+"\" target=\"_blank\">"+activeUrl+"</a>", "text/html;charset=UTF-8");
+        message.setContent("尊敬的用户，您好！我是睿道社区站长songbo，请点击激活链接完成邮箱激活<a href=\""+activeUrl+"\" target=\"_blank\">"+activeUrl+"</a>", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());
