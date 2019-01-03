@@ -116,10 +116,10 @@ public class ApiController {
             File file2 = new File(realPath+File.separator+uuid+file.getOriginalFilename());
             file.transferTo(file2);
 
-            HttpSession session = request.getSession();
-            User userinfo = (User)session.getAttribute("userinfo");
-            userinfo.setPicPath(uuid+file.getOriginalFilename());
-            session.setAttribute("userinfo",userinfo);
+//            HttpSession session = request.getSession();
+//            User userinfo = (User)session.getAttribute("userinfo");
+//            userinfo.setPicPath(uuid+file.getOriginalFilename());
+//            session.setAttribute("userinfo",userinfo);
 
 
             regRespObj.setUrl(request.getServletContext().getContextPath()+"/res/uploadImgs/"+uuid+file.getOriginalFilename());
