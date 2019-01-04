@@ -200,8 +200,8 @@
                         <dd>
                             <a href="${pageContext.request.contextPath}/user/home/${topuser.user_id}">
                                 <c:choose>
-                                    <c:when test="${userinfo.picPath != ''}">
-                                        <img src="${pageContext.request.contextPath}/res/uploadImgs/${userinfo.picPath}"><cite>${topuser.nickname}</cite><i>${topuser.comment_num}次回答</i>
+                                    <c:when test="${! empty topuser.pic_path}">
+                                        <img src="${pageContext.request.contextPath}/res/uploadImgs/${topuser.pic_path}"><cite>${topuser.nickname}</cite><i>${topuser.comment_num}次回答</i>
                                     </c:when>
                                     <c:otherwise>
                                         <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>${topuser.nickname}</cite><i>${topuser.comment_num}次回答</i>
